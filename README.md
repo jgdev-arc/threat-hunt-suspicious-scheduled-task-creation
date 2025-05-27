@@ -5,11 +5,11 @@
 Suspicious Scheduled Task Creation Detected on Workstation: **vm-test-zedd**
 
 ## Platforms and Tools Used
-- **Microsoft Azure** (Virtual Machine: `vm-hunt-task01`)
+- **Microsoft Azure** (Virtual Machine)
 - **Microsoft Defender for Endpoint** (EDR telemetry)
-- **Kusto Query Language (KQL)** (for hunting in Advanced Hunting portal)
-- **Windows Task Scheduler** (used in attack simulation)
-- **PowerShell** (to simulate the attack and drop artifacts)
+- **Kusto Query Language (KQL)** 
+- **Windows Task Scheduler** 
+- **PowerShell** 
 
 ---
 
@@ -62,7 +62,7 @@ DeviceProcessEvents
 
 ### 🧩 2. Registry Artifact Discovered – Scheduled Task Persistence
 
-On **May 26, 2025 at 6:31:01 PM (UTC-5)**, the registry on **vm-hunt-task01** recorded the creation of a new scheduled task entry under the **TaskCache** path. The task was associated with the GUID `{3124AC33-AC26-4922-B34F-8FA565F419C6}` and was written by the **SYSTEM** account.
+On **May 26, 2025 at 6:31:01 PM (UTC-5)**, the registry on **vm-test-zedd** recorded the creation of a new scheduled task entry under the **TaskCache** path. The task was associated with the GUID `{3124AC33-AC26-4922-B34F-8FA565F419C6}` and was written by the **SYSTEM** account.
 
 These registry modifications indicate the task was successfully registered for persistence.
 
