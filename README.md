@@ -36,7 +36,7 @@ The security team suspects that a user has attempted to establish persistence on
 
 ### 📁 1. Scheduled Task Creation Detected
 
-On May 26, 2025 at 6:31 PM (UTC-5), user labuser on the device vm-test-zedd executed schtasks.exe to create a scheduled task named "Backdoor Update Check". The task was configured to run every 5 minutes and execute a hidden PowerShell command that downloads a file named backdoor.ps1 to the user's desktop.
+On May 26, 2025 at 6:31 PM, user labuser on the device vm-test-zedd executed schtasks.exe to create a scheduled task named "Backdoor Update Check". The task was configured to run every 5 minutes and execute a hidden PowerShell command that downloads a file named backdoor.ps1 to the user's desktop.
 
 **Command Executed:**
 ```
@@ -62,7 +62,7 @@ DeviceProcessEvents
 
 ### 🧩 2. Registry Artifact Discovered – Scheduled Task Persistence
 
-On **May 26, 2025 at 6:31:01 PM (UTC-5)**, the registry on **vm-test-zedd** recorded the creation of a new scheduled task entry under the **TaskCache** path. The task was associated with the GUID `{3124AC33-AC26-4922-B34F-8FA565F419C6}` and was written by the **SYSTEM** account.
+On **May 26, 2025 at 6:31:01 PM**, the registry on **vm-test-zedd** recorded the creation of a new scheduled task entry under the **TaskCache** path. The task was associated with the GUID `{3124AC33-AC26-4922-B34F-8FA565F419C6}` and was written by the **SYSTEM** account.
 
 These registry modifications indicate the task was successfully registered for persistence.
 
@@ -93,7 +93,7 @@ DeviceRegistryEvents
 
 ### 📄 3. Suspicious Script File Dropped
 
-On **May 26, 2025 at 6:20:43 PM (UTC-5)**, a PowerShell script named **`backdoor.ps1`** was created on the **Desktop** of user **labuser** on the device **vm-test-zedd**. The file creation coincides with the scheduled task configuration observed earlier.
+On **May 26, 2025 at 6:20:43 PM**, a PowerShell script named **`backdoor.ps1`** was created on the **Desktop** of user **labuser** on the device **vm-test-zedd**. The file creation coincides with the scheduled task configuration observed earlier.
 
 **File Details:**
 - **File Name:** `backdoor.ps1`
@@ -118,7 +118,7 @@ DeviceFileEvents
 
 ## 🕒 Chronological Timeline of Events – Suspicious Scheduled Task Activity  
 **Device:** `vm-test-zedd`  
-**Date:** May 26, 2025 (UTC-5)
+**Date:** May 26, 2025
 
 | **Time**       | **Event**                        | **Details** |
 |----------------|----------------------------------|-------------|
